@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 #header{
     width:100%;
