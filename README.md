@@ -19,15 +19,7 @@ Through my academic journey and practical experience, including job shadowing at
 
 ## 🚀 Technologies Used  
 - Frontend: HTML, CSS, JavaScript  
-- Hosting: GitHub Pages  
-
-## 📂 Project Structure  
-```plaintext
-├── index.html          # Main webpage
-├── styles.css          # Styling for the website
-├── script.js           
-├── images/             # Portfolio images and assets
-└── README.md           # Documentation
+- Hosting: GitHub Pages
 
 📞 Contact Me
 If you'd like to connect, feel free to reach out!
@@ -35,3 +27,10 @@ If you'd like to connect, feel free to reach out!
 🔗 LinkedIn: https://www.linkedin.com/in/isabella-monyeseala-513b772a9
 🌐 Portfolio: https://isamonyeseala.github.io/Isabella-s-Personal-Portfolio/
 
+- ## 📂 Project Structure  
+```plaintext
+├── index.html          # Main webpage
+├── styles.css          # Styling for the website
+├── script.js           
+├── images/             # Portfolio images and assets
+└── README.md           # Documentation
