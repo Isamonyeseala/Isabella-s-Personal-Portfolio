@@ -24,7 +24,7 @@ body{
 }
     
 .logo{
-    width: 240px;
+    width: 100px;
 }
 nav{
     display:  flex;
