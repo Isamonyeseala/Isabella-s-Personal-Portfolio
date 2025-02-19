@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -258,27 +258,24 @@ transform: scale(1.1);
     height: 100%;
 
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: 100%;
+.btn {
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 8px 20px; 
+    font-size: 16px; 
     border: 1px solid #ff004f;
-    padding: 15px 50px;
-    border-radius: 50px;
+    border-radius: 25px; 
     text-decoration: none;
     color: #fff;
-
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0;
-
-    /* transition: background 0.5s;*/
+    background: #ff004f;
+    transition: transform 0.3s ease;
 }
+
 .btn:hover {
-    transform: translateY(-10px);
-    background: #ff004f
+    transform: translateY(-3px); 
+    background: #d4003b;
 }
+
 /*---------------Contact-----------------*/
 #contact{
     padding: 5% 0;
