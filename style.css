@@ -28,7 +28,7 @@ body{
     width: 240px;
 }
 nav{
-    display: flex;
+    display:  flex;
     width: 100%;
     z-index: 1;
     align-items: center;
@@ -39,23 +39,6 @@ nav{
     position: fixed;
     top: 0;
 }
-/*nav{
-    background-color: white;
-    height: 5%;
-    position: fixed;
-    top: 0;
-    transition: background-color 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 2;
-}
-header.scrolled {
-    background-color: white;
-    opacity: 0.98;
-} */
-
 nav ul li{
     display: inline-block; 
     list-style: none;
@@ -68,9 +51,6 @@ nav ul li a{
     font-size: 20px;
     position: relative;
 }
-/*header.scrolled ul li a{
-    color: white;
-} */
 nav ul li a::after{
     content: '';
     width: 0;
