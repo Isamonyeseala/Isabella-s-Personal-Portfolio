@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         msg.textContent = "Thank you! Your message has been sent.";
-        msg.style.color = "pink"; // Success message color
+        msg.style.color = "green"; // Success message color
 
         setTimeout(() => {
           msg.textContent = "";
