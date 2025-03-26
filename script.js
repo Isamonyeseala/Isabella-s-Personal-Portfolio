@@ -1,30 +1,36 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-  let tablinks = document.querySelectorAll(".tab-links");
-  let tabcontents = document.querySelectorAll(".tab-contents");
-
-  tablinks.forEach((link) => link.classList.remove("active-link"));
-  tabcontents.forEach((content) => content.classList.remove("active-tab"));
-
-  document
-    .querySelector(`[onclick="opentab('${tabname}')"]`)
-    .classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
 document.addEventListener("DOMContentLoaded", function () {
+  // Tab Switching Logic
+  function opentab(tabname) {
+    document
+      .querySelectorAll(".tab-links")
+      .forEach((link) => link.classList.remove("active-link"));
+    document
+      .querySelectorAll(".tab-contents")
+      .forEach((content) => content.classList.remove("active-tab"));
+
+    document
+      .querySelector(`[onclick="opentab('${tabname}')"]`)
+      .classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  // Ensure first tab (Education) is active on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".tab-links").classList.add("active-link");
+    document.getElementById("Education").classList.add("active-tab");
+  });
+
+  // Mobile Menu Controls
   const sidemenu = document.getElementById("sidemenu");
+  if (sidemenu) {
+    window.openmenu = () => (sidemenu.style.right = "0");
+    window.closemenu = () => (sidemenu.style.right = "-200px");
+  }
 
-  window.openmenu = function () {
-    sidemenu.style.right = "0";
-  };
-
-  window.closemenu = function () {
-    sidemenu.style.right = "-200px";
-  };
-});
-document.addEventListener("DOMContentLoaded", function () {
+  // Google Sheets Form Submission
   const form = document.forms["submit-to-google-sheet"];
   const msg = document.getElementById("msg");
   const scriptURL =
@@ -40,22 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
           body: new FormData(form),
         });
 
-        if (!response.ok) {
-          throw new Error("Failed to submit the form.");
-        }
+        if (!response.ok) throw new Error("Failed to submit the form.");
 
         msg.textContent = "Thank you! Your message has been sent.";
-        msg.style.color = "green"; // Success message color
+        msg.style.color = "green";
 
-        setTimeout(() => {
-          msg.textContent = "";
-        }, 5000);
-
+        setTimeout(() => (msg.textContent = ""), 5000);
         form.reset();
       } catch (error) {
         console.error("Error!", error);
         msg.textContent = "An error occurred. Please try again.";
-        msg.style.color = "red"; // Error message color
+        msg.style.color = "red";
       }
     });
   }
