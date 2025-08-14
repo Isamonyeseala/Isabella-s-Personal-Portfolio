@@ -189,7 +189,7 @@ border-radius: 15px;
 }
 
 .skill-card a {
-    color: #007BFF;
+    color: #EC297B;
     text-decoration: none;
     font-weight: bold;
 }
@@ -197,6 +197,7 @@ border-radius: 15px;
 .skill-card a:hover {
     text-decoration: underline;
 }
+
 /*-----------------projects------------------*/
 #projects{
   padding: 5% 0;
