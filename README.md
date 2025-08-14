@@ -1,9 +1,9 @@
-# Isabella-s-Personal-Portfolio
+# Isabella's-Personal-Portfolio
 
 Welcome to my personal portfolio website! This project is built using HTML and CSS and some JavaScript to showcase my skills, experience, certifications, projects, and contact information. As a passionate web developer and IT graduate, I am eager to leverage my expertise in web development, frontend and backend to contribute to innovative projects.  
 
 ## 🌟 About Me  
-I am an IT professional with a strong foundation in cloud web development, computing and networking. My certifications include:  
+I am an IT professional with a strong foundation in web development, computing and networking. My certifications include:  
 - Cloud & AWS: AWS Educate Machine Learning Foundation, AWS Cloud Computing  
 - Cybersecurity: Cybersecurity Fundamentals, Threat Intelligence & Hunting  
 - Networking: CCNA: Switching, Routing, and Wireless Essentials  
