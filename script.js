@@ -60,4 +60,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  let lastScrollTop = 0;
+const navbar = document.querySelector("nav"); // update selector if different
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // scrolling down → hide navbar
+    navbar.classList.add("nav-hidden");
+  } else {
+    // scrolling up → show navbar
+    navbar.classList.remove("nav-hidden");
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative scroll
+}, false);
+
 });
