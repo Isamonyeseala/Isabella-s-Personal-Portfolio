@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   let lastScrollTop = 0;
-const navbar = document.querySelector("nav"); // update selector if different
+const navbar = document.querySelector("nav"); 
 
 window.addEventListener("scroll", function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -74,7 +74,6 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("nav-hidden");
   }
 
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative scroll
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
 }, false);
-
 });
