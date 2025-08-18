@@ -26,18 +26,18 @@ body{
 .logo{
     width: 100px;
 }
-nav{
-    display:  flex;
-    width: 100%;
-    z-index: 1;
-    align-items: center;
-    justify-content: space-between;
-    left: 0;
-    background: white;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
+nav {
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
+
+.nav-hidden {
+  top: -80px; /* adjust based on navbar height */
+}
+
 nav ul li{
     display: inline-block; 
     list-style: none;
@@ -546,4 +546,10 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    @media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
 }
