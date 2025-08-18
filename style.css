@@ -24,20 +24,24 @@ body{
 }
     
 .logo{
-    width: 100px;
+    width: 85px;
 }
-nav {
-  transition: top 0.3s;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+nav{
+    display:  flex;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    background: white;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
 }
-
 .nav-hidden {
-  top: -80px; /* adjust based on navbar height */
+  top: -50px; 
 }
-
 nav ul li{
     display: inline-block; 
     list-style: none;
@@ -546,10 +550,4 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-    @media (max-width: 768px) {
-  footer {
-    display: none;
-  }
-}
-
 }
