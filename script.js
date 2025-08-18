@@ -76,4 +76,13 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
 }, false);
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.classList.add("fade-out");
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 1000); // match fadeOut duration
+});
+
 });
