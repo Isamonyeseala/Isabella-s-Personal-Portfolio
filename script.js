@@ -1,29 +1,28 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
+function opentab(tabname) {
+  document
+    .querySelectorAll(".tab-links")
+    .forEach((link) => link.classList.remove("active-link"));
+  document
+    .querySelectorAll(".tab-contents")
+    .forEach((content) => content.classList.remove("active-tab"));
+
+  document
+    .querySelector(`[onclick="opentab('${tabname}')"]`)
+    .classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+// Ensure first tab (Education) is active on page load
 document.addEventListener("DOMContentLoaded", function () {
-  // Tab Switching Logic
-  function opentab(tabname) {
-    document
-      .querySelectorAll(".tab-links")
-      .forEach((link) => link.classList.remove("active-link"));
-    document
-      .querySelectorAll(".tab-contents")
-      .forEach((content) => content.classList.remove("active-tab"));
+  document.querySelector(".tab-links").classList.add("active-link");
+  document.getElementById("Education").classList.add("active-tab");
+});
 
-    document
-      .querySelector(`[onclick="opentab('${tabname}')"]`)
-      .classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
-
-  // Ensure first tab (Education) is active on page load
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".tab-links").classList.add("active-link");
-    document.getElementById("Education").classList.add("active-tab");
-  });
-
-  // Mobile Menu Controls
+document.addEventListener("DOMContentLoaded", function () {
+ // Mobile Menu Controls
   const sidemenu = document.getElementById("sidemenu");
   if (sidemenu) {
     window.openmenu = () => (sidemenu.style.right = "0");
