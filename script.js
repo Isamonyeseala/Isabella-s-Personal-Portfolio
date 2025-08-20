@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.forms["submit-to-google-sheet"];
   const msg = document.getElementById("msg");
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbw5ftpfOK9Lw2Yw_TMsA32XUAcZta2lO4MwXvIy9b6Ifert11fGGlcJVoYA3TmU7h_3/exec";
+    "https://script.google.com/macros/s/1jP3AUzmZfCGNZUsuMNvd0UwJzNaSvmAohHt21gR2nC1C17ZvlMooqO1E/exec";
 
   if (form) {
     form.addEventListener("submit", async (e) => {
